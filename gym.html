@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FitWithRehan</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fdf6f0;
+            color: #3b2b24;
+        }
+
+        nav {
+            background: #3b2b24;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: none;
+        }
+
+        nav h2 {
+            color: white;
+            margin: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff6b4a;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin: 10px;
+        }
+
+        .hero span {
+            color: #ff6b4a;
+        }
+
+        .hero p {
+            color: #777;
+        }
+
+        .button {
+            display: inline-block;
+            background: #ff6b4a;
+            color: white;
+            padding: 12px 25px;
+            margin-top: 15px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .button:hover,
+        .newsletter button:hover {
+            background: #e65335;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            text-align: center;
+            margin: 25px;
+        }
+
+        .stats h2 {
+            color: #ff6b4a;
+            margin-bottom: 5px;
+        }
+
+        .blog {
+            padding: 30px 7%;
+        }
+
+        .blog-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 31%;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px #ddd;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 18px #ccc;
+        }
+
+        .card img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 18px;
+        }
+
+        .tag {
+            color: #ff6b4a;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .card h2 {
+            font-size: 20px;
+        }
+
+        .card p {
+            color: #777;
+            line-height: 1.5;
+        }
+
+        .read {
+            color: #ff6b4a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .newsletter {
+            background: #3b2b24;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            margin-top: 50px;
+        }
+
+        .newsletter input {
+            padding: 12px;
+            width: 250px;
+            border: none;
+            border-radius: 20px;
+        }
+
+        .newsletter button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 20px;
+            background: #ff6b4a;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #fdf6f0;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>● FitWithRehan</h2>
+
+        <div>
+            <a href="#">Blog</a>
+            <a href="#">Programs</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <p>FITNESS & WELLNESS BLOG</p>
+
+        <h1>
+            Train Smart.<br>
+            <span>Live Strong.</span>
+        </h1>
+
+        <p>
+            Practical tips on training, nutrition and mindset.
+        </p>
+
+        <a class="button" href="#blog">Read the Blog</a>
+    </section>
+
+    <div class="stats">
+        <div>
+            <h2>12K+</h2>
+            <p>Readers</p>
+        </div>
+
+        <div>
+            <h2>48</h2>
+            <p>Articles</p>
+        </div>
+
+        <div>
+            <h2>5★</h2>
+            <p>Rating</p>
+        </div>
+    </div>
+
+    <section class="blog" id="blog">
+
+        <div class="blog-title">
+            <h1>Latest Fitness Tips</h1>
+            <p>Workouts, nutrition and healthy lifestyle tips.</p>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061">
+                <div class="card-content">
+                    <div class="tag">NUTRITION</div>
+                    <h2>Healthy Breakfast Ideas</h2>
+                    <p>Start your day with simple and healthy meals.</p>
+                    <a class="read" href="#">Read More →</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438">
+                <div class="card-content">
+                    <div class="tag">TRAINING</div>
+                    <h2>20-Minute HIIT Workout</h2>
+                    <p>A simple workout to keep your body active.</p>
+                    <a class="read" href="#">Read More →</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55">
+                <div class="card-content">
+                    <div class="tag">RECOVERY</div>
+                    <h2>Importance of Good Sleep</h2>
+                    <p>Learn why proper rest is important for recovery.</p>
+                    <a class="read" href="#">Read More →</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5">
+                <div class="card-content">
+                    <div class="tag">MINDSET</div>
+                    <h2>Stay Consistent</h2>
+                    <p>Build simple habits and stay consistent with fitness.</p>
+                    <a class="read" href="#">Read More →</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b">
+                <div class="card-content">
+                    <div class="tag">STRENGTH</div>
+                    <h2>Beginner Strength Training</h2>
+                    <p>Start building strength with basic exercises.</p>
+                    <a class="read" href="#">Read More →</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352">
+                <div class="card-content">
+                    <div class="tag">NUTRITION</div>
+                    <h2>Easy Meal Preparation</h2>
+                    <p>Prepare healthy meals for your busy week.</p>
+                    <a class="read" href="#">Read More →</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h1>Get Fitness Tips in Your Inbox</h1>
+
+        <p>
+            Workouts, recipes and fitness tips every week.
+        </p>
+
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+    </section>
+
+    <footer>
+        <p>© 2026 FitWithRehan | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
+
